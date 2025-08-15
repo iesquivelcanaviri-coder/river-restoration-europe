@@ -1,29 +1,55 @@
-# 🌍 Modeling Chemical Emissions and River Restoration Potential in Europe
+# 🇦🇹 Emissions Restoration Modeling: Austria Case Study
 
-## 🧠 Project Summary
-This project explores the intersection of environmental data science and policy by modeling chemical emissions across Europe and assessing their impact on river ecosystems. Using open datasets and geospatial analysis, I identify pollution hotspots and simulate restoration scenarios.
+This project analyzes pollutant emissions from manure management in Austria, focusing on arsenic (As) levels. It models a restoration scenario simulating a 30% reduction in emissions starting in 2025, providing insights into environmental policy impacts.
+
+---
 
 ## 🎯 Objective
-To showcase my data science skills and environmental modeling expertise in pursuit of a career at CERN — where open science, sustainability, and advanced analytics converge.
 
-## 📊 Key Features
-- Analysis of transboundary air pollutants using LRTAP Convention data
-- Geospatial mapping of emissions near major European rivers
-- Time-series modeling of chemical trends by country and sector
-- Restoration potential simulations based on emission reduction scenarios
+To demonstrate how data-driven restoration modeling can inform environmental decision-making by:
 
-## 🧪 Data Sources
-- [EEA LRTAP Convention Emissions Dataset](https://www.eea.europa.eu/en/datahub/datahubitem-view/5be6cebc-ed2b-4496-be59-93736fc4ad78)
+- Filtering and analyzing emissions data for a specific country, pollutant, and sector  
+- Simulating a restoration scenario with reduced emissions post-2025  
+- Visualizing original vs. restored emissions over time  
 
-## 🛠️ Tools & Technologies
-- Python (Pandas, GeoPandas, Matplotlib, Folium)
-- Jupyter Notebooks
-- GitLab for version control and CI/CD
-- Open environmental datasets
+This project is designed to showcase scientific rigor, reproducibility, and policy relevance — ideal for research institutions like CERN.
 
-## Commitment to open science and global collaboration aligns with my values. This project demonstrates:
-- Scientific rigor in data modeling
-- Environmental awareness and policy relevance
-- Technical proficiency in reproducible research
+---
 
+## 📁 Dataset
 
+- **Source**: `emissions_data.csv`  
+- **Format**: Tab-separated values (`.tsv`)  
+- **Required Columns**:
+  - `country`
+  - `pollutantName`
+  - `sectorName`
+  - `year`
+  - `value`
+
+Ensure the dataset is placed in the root directory or update the path in `DATA_PATH`.
+
+---
+
+## 🧪 Methodology
+
+1. **Load & Validate**: Reads the dataset and checks for required columns  
+2. **Filter**: Selects rows matching Austria, arsenic (As), and manure management  
+3. **Clean**: Converts year and value to numeric, drops missing entries  
+4. **Model**: Applies a 30% reduction to emissions from 2025 onward  
+5. **Visualize**: Plots original vs. restored emissions using Seaborn  
+
+---
+
+## 📊 Output
+
+- **Plot**: Line chart comparing original and restored emissions  
+- **Console**: Summary of grouped emissions by year  
+- **Optional**: Save results to CSV or image (can be added)
+
+---
+
+## 🚀 How to Run
+
+```bash
+python emissions_model.py
