@@ -21,16 +21,9 @@ To showcase my data science skills and environmental modeling expertise in pursu
 - GitLab for version control and CI/CD
 - Open environmental datasets
 
-## 🚀 Why CERN?
-CERN’s commitment to open science and global collaboration aligns with my values. This project demonstrates:
+## Commitment to open science and global collaboration aligns with my values. This project demonstrates:
 - Scientific rigor in data modeling
 - Environmental awareness and policy relevance
 - Technical proficiency in reproducible research
 
-## 📌 Next Steps
-- Add interactive dashboard (Streamlit or Dash)
-- Integrate water quality datasets
-- Publish results in a public notebook
-
----
 
