@@ -4,7 +4,7 @@ This project analyzes pollutant emissions from manure management in Austria, foc
 
 ---
 
-## 🎯 Objective
+## Objective
 
 To demonstrate how data-driven restoration modeling can inform environmental decision-making by:
 
@@ -16,7 +16,7 @@ This project is designed to showcase scientific rigor, reproducibility, and poli
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - **Source**: `emissions_data.csv`  
 - **Format**: Tab-separated values (`.tsv`)  
@@ -31,7 +31,7 @@ Ensure the dataset is placed in the root directory or update the path in `DATA_P
 
 ---
 
-## 🧪 Methodology
+## Methodology
 
 1. **Load & Validate**: Reads the dataset and checks for required columns  
 2. **Filter**: Selects rows matching Austria, arsenic (As), and manure management  
@@ -41,7 +41,7 @@ Ensure the dataset is placed in the root directory or update the path in `DATA_P
 
 ---
 
-## 📊 Output
+## Output
 
 - **Plot**: Line chart comparing original and restored emissions  
 - **Console**: Summary of grouped emissions by year  
