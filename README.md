@@ -49,7 +49,7 @@ Ensure the dataset is placed in the root directory or update the path in `DATA_P
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 python emissions_model.py
